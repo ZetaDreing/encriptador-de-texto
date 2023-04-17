@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main class="conteiner">
+      <div class="input-conteiner">
+        <img class="logo" src="/img/Logo.png" alt="logo" />
+        <div class="input">
+          <div>
+            <p id="error" class="error errordisable">No se admiten letras mayusculas</p>
+          </div>
+          <textarea oninput="error()" placeholder="Ingrese el texto aqui" id="input" class="text-input"></textarea>
+          <p class="warning"><span>!</span> Solo letras minúsculas y sin acentos</p>
+        </div>
+        <div class="bt-conteiner">
+          <button id="encriptar" class="bt bt-encriptar btoff">Encriptar</button>
+          <button id="desencriptar" class="bt bt-desencriptar btoff">Desencriptar</button>
+        </div>
+      </div>
+
+      <div class="decrypted-conteiner">
+        <div id="img" class="img"></div>
+        <h1>Ningún mensaje fue encontrado</h1>
+        <h2>Ingresa el texto que desees encriptar o desencriptar.</h2>
+        <button id="btCopiar" class="bt bt-copiar btcopiardeactivate" >Copiar</button>
+      </div>
+    </main>
+    <script src="/scripts/scripts.js" ></script>
+  </body>
+</html>
